@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --deep-navy: #24364B;
+    --soft-bg: #F5F7F8;
+    --muted-teal: #367F79;
+    --soft-teal: #DCEBE8;
+    --muted-blue: #DCE8F5;
+    --soft-amber: #F6E8C8;
+    --soft-coral: #F5DAD8;
+    --dark-slate: #273444;
+    --muted-slate: #687585;
+    --card-white: #FFFFFF;
+    --light-grey: #E0E6EA;
+  }
+
+  body {
+    background-color: var(--soft-bg);
+    color: var(--dark-slate);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom utility colors */
+.bg-deep-navy { background-color: #24364B; }
+.text-deep-navy { color: #24364B; }
+.border-deep-navy { border-color: #24364B; }
+
+.bg-soft-bg { background-color: #F5F7F8; }
+
+.bg-muted-teal { background-color: #367F79; }
+.text-muted-teal { color: #367F79; }
+.border-muted-teal { border-color: #367F79; }
+.hover\:bg-muted-teal-dark:hover { background-color: #2c6964; }
+
+.bg-soft-teal { background-color: #DCEBE8; }
+.text-soft-teal-dark { color: #235450; }
+
+.bg-muted-blue { background-color: #DCE8F5; }
+.text-muted-blue-dark { color: #1e4570; }
+
+.bg-soft-amber { background-color: #F6E8C8; }
+.text-soft-amber-dark { color: #7a540f; }
+
+.bg-soft-coral { background-color: #F5DAD8; }
+.text-soft-coral-dark { color: #872924; }
+
+.text-dark-slate { color: #273444; }
+.text-muted-slate { color: #687585; }
+
+.bg-card-white { background-color: #FFFFFF; }
+.border-light-grey { border-color: #E0E6EA; }
+
+/* Custom leaflet container styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
